@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_danhgia {
+  height: 400px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* content left */
+.container_danhgia .content_left {
+  width: 350px;
+  height: 200px;
+  /* background-color: gray; */
+}
+
+.content_left .title_danhgia {
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+.content_left .content {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.content_left .icon {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.content_left .link_danhgia {
+  text-align: center;
+  padding: 15px;
+}
+.content_left .link_danhgia a {
+  text-decoration: none;
+}
+/* content right */
+.container_danhgia .content_right {
+  width: 900px;
+  height: 260px;
+  display: flex;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/* Thanh cuộn tùy chỉnh */
+.container_danhgia .content_right::-webkit-scrollbar {
+  width: 12px; /* Chiều rộng của thanh cuộn dọc */
+  height: 12px; /* Chiều rộng của thanh cuộn ngang */
+}
+
+/* Khung của thanh cuộn */
+.container_danhgia .content_right::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Màu nền cho khung cuộn */
+  border-radius: 10px; /* Bo góc cho khung cuộn */
+  border: 1px solid #ccc; /* Viền cho khung cuộn */
+}
+
+/* Thanh kéo */
+.container_danhgia .content_right::-webkit-scrollbar-thumb {
+  background-color: orange; /* Màu nền của thanh kéo */
+  border-radius: 10px; /* Bo góc cho thanh kéo */
+  border: 2px solid #f0f0f0; /* Viền cho thanh kéo */
+}
+
+/* Hiệu ứng khi hover vào thanh kéo */
+.container_danhgia .content_right::-webkit-scrollbar-thumb:hover {
+  background-color: #ee9453; /* Màu khi hover thanh kéo */
+}
+/* end thanh cuộn  */
+
+.card p {
+  font-size: 15px;
+  padding-top: 0px;
+  padding-left: 10px;
+  line-height: 20px;
+}
+
+.box {
+  width: 280px;
+  height: 180px;
+  border-radius: 5px;
+  border: 1px solid #ee9453;
+  background-color: white;
+  margin-right: 25px;
+}
+
+.container_danhgia .name {
+  margin-top: 15px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.container_danhgia .sticker {
+  margin-top: 5px;
+  margin-left: 30px;
+  color: #00a651;
+}
